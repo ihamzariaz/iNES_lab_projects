@@ -1,7 +1,9 @@
 # iNES_lab_projects
 This repository contains implimentation of vggnet(https://arxiv.org/pdf/1409.1556.pdf) by using tensorflow, and keras respectively in our own and tiny imagenet dataset. Moreover, it will tell us about transfer learning and fine tuning.
 # 1)Vggnet experiments
+
 1) Requirements:
+
  1.1) Tensorflow latest version.
 
  1.2) Keras latest version.
