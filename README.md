@@ -63,9 +63,7 @@ Please download the dataset from this link and placed in the same directory in w
   
 # 4) Implementation with keras on our custom dataset by using transfer learning and fine tuning:
 
- In this experiment, I used a different plateform to train our model because Keras is easy to use and user fiendly language. And  
- in the backend of it, we can use tensorflow or theano languages. But in my case, I,m using tensorflow in the backend of keras.  
- The folder transfer_learning_vggnet16 contains the required files for running our code. 
+ In this experiment, I used a different plateform to train our model because Keras is easy to use and user fiendly language.And in the backend of it, we can use tensorflow or theano languages. But in my case, I,m using tensorflow in the backend of keras. The folder transfer_learning_vggnet16 contains the required files for running our code. 
  
  4.1) Training:
  
