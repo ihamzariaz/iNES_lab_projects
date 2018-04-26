@@ -9,7 +9,7 @@ Requirements:
  3) python 3.6.
 
  4) Other machine learning and data handling libraries which I'm using in my codes.
- 
+
 1) Implementation with tensorflow on any custom dataset:
 
 I tried to apply Vgg16 network upon any gerenal dataset by adding batch capabilities and using cross entropy loss in my code.
