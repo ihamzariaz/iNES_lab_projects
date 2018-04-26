@@ -2,14 +2,14 @@
 This repository contains implimentation of vggnet by using tensorflow, and keras respectively in our own and tiny imagenet dataset. Moreover, it will tell us about transfer learning and fine tuning.
 # 1)Vggnet experiments
 Requirements:
-1) Tensorflow latest version.
+ 1) Tensorflow latest version.
 
-2) Keras latest version.
+ 2) Keras latest version.
 
-3) python 3.6.
+ 3) python 3.6.
 
-4) Other machine learning and data handling libraries which I'm using in my codes.
-
+ 4) Other machine learning and data handling libraries which I'm using in my codes.
+ 
 1) Implementation with tensorflow on any custom dataset:
 
 I tried to apply Vgg16 network upon any gerenal dataset by adding batch capabilities and using cross entropy loss in my code.
@@ -21,6 +21,7 @@ In the VggNet_tensorflow folder, we have all the necessary files to start traini
   simulator. In this code, I have added the ability to save the final trained model. In VggNet_tensorflow folder, we have data
   folder which contain the data but we can use any kind of data to train our model. The accuracy may be not so good because of 
   less data but we can try to use for large data as well.
+
  1.2) Testing: 
 
   For testing the saved model, please run new_model_test.py file and in this file, the code firstly load the already saved model 
@@ -44,19 +45,23 @@ Please download the dataset from this link and placed in the same directory in w
   test the model.
   
  2.2) Model:
+ 
   Model is in the file vgg16.py and our dataset has very low resolution therefore, I remove some layers from vggnet for example
   if we open the file and see 3 and 5 layers are not including. 
  
  2.3) Input_pipe.py
+ 
   This file contains loading images and labels from directories of imagenet and making quenes for training on gpu. The data
   preprocessing is done by cpu but trainig is done on gpu.
  
  2.4)Loss.py
+ 
   This file contains defination of three different loss function which we can be implemented according to requirement.
   I also define svm loss but it doesn't show any improvement.
   
 3) Implementation with keras on our custom dataset by using transfer learning and fine tuning:
 
-In this experiment, I used a different plateform to train our model because Keras is easy to use and user fiendly language. And in the backend of it, we can use tensorflow or theano languages. But in my case, I,m using tensorflow in the backend of keras.   
+In this experiment, I used a different plateform to train our model because Keras is easy to use and user fiendly language. And in the backend of it, we can use tensorflow or theano languages. But in my case, I,m using tensorflow in the backend of keras. 
+
 
 4) Implementation with keras on Tiny Imagenet Dataset.
