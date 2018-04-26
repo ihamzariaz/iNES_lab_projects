@@ -1,5 +1,5 @@
 # iNES_lab_projects
-This repository contains implimentation of vggnet by using tensorflow, and keras respectively in our own and tiny imagenet dataset. Moreover, it will tell us about transfer learning and fine tuning.
+This repository contains implimentation of vggnet(https://arxiv.org/pdf/1409.1556.pdf) by using tensorflow, and keras respectively in our own and tiny imagenet dataset. Moreover, it will tell us about transfer learning and fine tuning.
 # 1)Vggnet experiments
 Requirements:
  1) Tensorflow latest version.
@@ -54,14 +54,29 @@ Please download the dataset from this link and placed in the same directory in w
   This file contains loading images and labels from directories of imagenet and making quenes for training on gpu. The data
   preprocessing is done by cpu but trainig is done on gpu.
  
- 2.4)Loss.py
+ 2.4) Loss.py
  
   This file contains defination of three different loss function which we can be implemented according to requirement.
   I also define svm loss but it doesn't show any improvement.
   
 3) Implementation with keras on our custom dataset by using transfer learning and fine tuning:
 
-In this experiment, I used a different plateform to train our model because Keras is easy to use and user fiendly language. And in the backend of it, we can use tensorflow or theano languages. But in my case, I,m using tensorflow in the backend of keras. 
-
-
+ In this experiment, I used a different plateform to train our model because Keras is easy to use and user fiendly language. And  
+ in the backend of it, we can use tensorflow or theano languages. But in my case, I,m using tensorflow in the backend of keras.  
+ The folder transfer_learning_vggnet16 contains the required files for running our code. 
+ 
+ 3.1) Training:
+ 
+ To start traning the model please sun this file transfer_learning_vgg16_custom_data.py. This file contains the concept of  
+ freezing the layers of network and start fine tuning our network. This is an easy example for learn about transfer learning.
+ 
+ 3.2) vgg16.py:
+  
+  It is the generalize network which downloads the weights for vggnet16 and then We can test and train a new network by using new 
+  datasets.
+  
 4) Implementation with keras on Tiny Imagenet Dataset.
+
+In this experiment, I implemented a simple cnn network in Tiny Imagenet Dataset by using keras. But if anyone want to change in network to vggnet then just remove the relu layers in it and add some other layers according to Vggnet Architecture. The folder Simple_CNN_imagenet contains the code file tiny_imagenet.py. And datset can be found in this following link:
+
+https://tiny-imagenet.herokuapp.com/.
