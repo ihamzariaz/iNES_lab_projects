@@ -80,3 +80,17 @@ Please download the dataset from this link and placed in the same directory in w
 In this experiment, I implemented a simple cnn network in Tiny Imagenet Dataset by using keras. But if anyone want to change in network to vggnet then just remove the relu layers in it and add some other layers according to Vggnet Architecture. The folder Simple_CNN_imagenet contains the code file tiny_imagenet.py. And datset can be found in this following link:
 
 https://tiny-imagenet.herokuapp.com/.
+
+# Advisor and Collaborator list:
+
+1.Advisor:
+
+Name: Professor Jungsuk Kim,
+
+Affiliation: Supervisor 
+
+2.Co-Advisor:
+
+Name: Dr. Peter Kim,
+
+Affiliation: Co-Supervisor
